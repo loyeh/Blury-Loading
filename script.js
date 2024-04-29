@@ -20,7 +20,7 @@ function blur(){
             blurStep--;
             loader.style.opacity=1-step/100;
             back.style.opacity=0.7-step/100;
-            loader.innerText=`${100-step}%`;
+            loader.innerText=`${step}%`;
             main.style.filter=`blur(${(blurStep*2)/20}px)`;
         }
     }
